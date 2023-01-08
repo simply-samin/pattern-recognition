@@ -149,7 +149,6 @@ def preprocess_text(text):
     #Remove hyperlinks
     text = re.sub(r'https?:\/\/\S*', '', text)
     #text = re.sub(r'https?:\/\/.*[\r\n]*', '', text)
-    #text = re.sub(r'https?:\/\/.*\s*', '', text)
     text = re.sub(r'www\.\S*', '', text)
     text = re.sub(r'\S*\.(com|info|net|org)', '', text)
  
